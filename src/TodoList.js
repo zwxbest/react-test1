@@ -13,7 +13,8 @@ class TodoList extends Component {
     return (
         <Fragment>
             <div>
-                <input value={this.state.inputValue}/>
+                <input value={this.state.inputValue}
+                onChange={this.handleInputChange}/>
                 <button>提交</button>
             </div>
             <ul>
@@ -24,4 +25,7 @@ class TodoList extends Component {
   }
 }
 
+function handleInputChange(e) {
+    console.log(e)
+}
 export default TodoList;
