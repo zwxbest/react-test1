@@ -1,3 +1,6 @@
-`import React, { Component } from 'react'; class App extends Component `
+`import React, { Component } from 'react';`
 等同于
-`import React from 'react'; class App extends React.Component `
+```
+import React from 'react';
+const Component = React.Component
+```
