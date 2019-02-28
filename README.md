@@ -1,1 +1,1 @@
-use className
+dangerouslySetInnerHTML
