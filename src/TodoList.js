@@ -19,7 +19,7 @@ class TodoList extends Component {
             <ul>
                 {
                     this.state.list.map((item,index)=>{
-                        return <li>{item}</li>
+                        return <li key={index}>{item}</li>
                     })
                 }
             </ul>
