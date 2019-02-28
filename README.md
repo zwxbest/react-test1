@@ -1,44 +1,16 @@
- this.setState-undefined
- 
-###3-2-5
+### 2_3
 
-bind(this)
-###3-3-1
+create-react-app
 
-bind(this)
-###3-3-2
 
-提交时清空inputValue
-###3-3-3
 
-增加元素的key
-###3-3-4
+### 2_3_1
 
-事件传递参数
+`import React, { Component } from 'react'; class App extends Component `
+等同于
+`import React from 'react'; class App extends React.Component `
 
-###3-3-5
-
-事件传递参数
-
-###3-3-6
-
-删除一个
-###3-3-7
-
-违反immutable原则
-###3-4-1
-
-use className
-###3-4-2
-
-dangerouslySetInnerHTML
-###3-4-3
-
-增加<label>
-###3-4-4
-
-label的htmlFor和多行注释
-###3_1_1
+### 2_4_2
 
 `import React, { Component } from 'react';`
 等同于
@@ -46,12 +18,39 @@ label的htmlFor和多行注释
 import React from 'react';
 const Component = React.Component
 ```
-###3_1_2
 
-必须包裹在一个父元素中
-###3_1_3
+### 3-2-1
 
-必须包裹在一个父元素中
-###3_1_4
+input绑定gst
 
-使用Fragment配置忽略div
+
+### 3-2-2
+
+打印事件的e
+
+### 3-2-3
+
+console.log(e.target.value);
+
+### 3-2-4
+
+ this.setState-undefined
+
+### 3-2-5
+
+bind(this)
+
+### 3-3-1
+
+bind(this)
+
+### 3-3-2
+
+提交时清空inputValue
+
+### 3-3-3
+
+增加元素的key
+
+### 3-3-4
+"README.md" [noeol] 110L, 1096C          
