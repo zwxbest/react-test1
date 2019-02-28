@@ -1,1 +1,1 @@
-打印事件的e
+console.log(e.target.value);
