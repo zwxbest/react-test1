@@ -1,1 +1,1 @@
-使用Fragment配置忽略div
+input绑定gst
