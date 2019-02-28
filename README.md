@@ -1,1 +1,1 @@
-dangerouslySetInnerHTML
+增加<label>
