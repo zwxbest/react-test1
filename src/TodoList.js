@@ -12,7 +12,11 @@ class TodoList extends Component {
     return (
         <Fragment>
             <div>
-                <label for ="insertArea" >输入内容</label>
+                {/*
+                  多行
+                  注释
+                  */}
+                <label htmlFor="insertArea" >输入内容</label>
                 <input id="insertArea" className='input' value={this.state.inputValue}
                 onChange={this.handleInputChange.bind(this)}/>
                 <button onClick={this.handleButtonClick.bind(this)}>提交</button>
