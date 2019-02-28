@@ -1,7 +1,6 @@
 import React,{Component,Fragment} from 'react';
 
 class TodoList extends Component {
-
     constructor(props){
         super(props);
         this.state ={
@@ -24,7 +23,9 @@ class TodoList extends Component {
     );
   }
     handleInputChange(e){
-        this.state.inputValue=e.target. value;
+        this.setState({
+            inputValue: e.target.value
+        })
     }
 }
 
