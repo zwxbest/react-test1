@@ -1,1 +1,1 @@
-bind(this)
+提交时清空inputValue

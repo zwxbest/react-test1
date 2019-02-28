@@ -30,7 +30,8 @@ class TodoList extends Component {
   handleButtonClick(e){
         this.setState({
             //展开运算符
-            list: [...this.state.list,this.state.inputValue]
+            list: [...this.state.list,this.state.inputValue],
+            inputValue: ''
         })
   }
     handleInputChange(e){
