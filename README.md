@@ -1,1 +1,1 @@
- this.setState-undefined
+bind(this)
