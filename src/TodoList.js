@@ -1,9 +1,9 @@
-import React,{Component} from 'react';
+import React,{Component,Fragment} from 'react';
 
 class TodoList extends Component {
   render() {
     return (
-        <div>
+        <Fragment>
             <div>
                 <input/>
                 <button>提交</button>
@@ -11,7 +11,7 @@ class TodoList extends Component {
             <ul>
                 <li>学英语</li>
             </ul>
-        </div>
+        </Fragment>
     );
   }
 }
