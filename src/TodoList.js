@@ -24,7 +24,7 @@ class TodoList extends Component {
     );
   }
     handleInputChange(e){
-        console.log(e.target.value);
+        this.state.inputValue=e.target. value;
     }
 }
 
