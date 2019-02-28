@@ -41,10 +41,10 @@ class TodoList extends Component {
     }
 
     handleItemDelete(index){
-        const list = [...this.state.list];
-        list.splice(index,1);
+        //immutable react原则尽量不变，虽然这个也可以
+        this.state.list.splice(index,1);
         this.setState({
-            list: list
+            list: this.state.list
         })
     }
 }
