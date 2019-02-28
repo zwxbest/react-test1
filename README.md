@@ -1,6 +1,1 @@
-`import React, { Component } from 'react';`
-等同于
-```
-import React from 'react';
-const Component = React.Component
-```
+必须包裹在一个父元素中
