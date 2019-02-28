@@ -13,7 +13,7 @@ class TodoList extends Component {
         <Fragment>
             <div>
                 <input value={this.state.inputValue}
-                onChange={this.handleInputChange}/>
+                onChange={this.handleInputChange.bind(this)}/>
                 <button>提交</button>
             </div>
             <ul>
