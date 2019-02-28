@@ -23,9 +23,10 @@ class TodoList extends Component {
         </Fragment>
     );
   }
+    handleInputChange(e){
+        console.log(e.target.value);
+    }
 }
 
-function handleInputChange(e) {
-    console.log(e)
-}
+
 export default TodoList;
