@@ -1,5 +1,6 @@
 import React,{Component,Fragment} from 'react';
 import TodoItem from './TodoItem'
+import Test from './Test'
 
 //最后引入样式
 import './style.css'
@@ -15,6 +16,7 @@ class TodoList extends Component {
         this.handleItemDelete=this.handleItemDelete.bind(this);
     }
   render() {
+      console.log("todoList render");
     return (
         <Fragment>
             <div>
@@ -30,7 +32,9 @@ class TodoList extends Component {
             <ul>
                 {this.getTodoItem()}
             </ul>
+            <Test/>
         </Fragment>
+
     );
   }
 
@@ -63,6 +67,5 @@ class TodoList extends Component {
         })
     }
 }
-
 
 export default TodoList;
