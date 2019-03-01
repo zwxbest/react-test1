@@ -1,6 +1,6 @@
 import React,{Component,Fragment} from 'react';
 import TodoItem from './TodoItem'
-import PropTypes from 'prop-types';
+
 //最后引入样式
 import './style.css'
 class TodoList extends Component {
@@ -64,9 +64,5 @@ class TodoList extends Component {
     }
 }
 
-TodoItem.propTypes={
-    content: PropTypes.string,
-    deleteItem: PropTypes.func,
-    index: PropTypes.string
-}
+
 export default TodoList;

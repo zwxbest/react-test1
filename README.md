@@ -1,1 +1,1 @@
-PropTypes类型校验
+PropTypes.string应对空的情况
