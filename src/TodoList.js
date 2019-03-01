@@ -27,11 +27,7 @@ class TodoList extends Component {
                 <button onClick={this.handleButtonClick}>提交</button>
             </div>
             <ul>
-                {
-                    this.state.list.map((item,index)=>{
-                        return <TodoItem content={item} index={index} deleteItem={this.handleItemDelete}/>
-                    })
-                }
+                {this.getTodoItem()}
             </ul>
         </Fragment>
     );
@@ -56,6 +52,12 @@ class TodoList extends Component {
         list.splice(index,1);
         this.setState({
             list: list
+        })
+    }
+
+    getTodoItem(){
+       return this.state.list.map((item,index)=>{
+            return <TodoItem content={item} index={index} deleteItem={this.handleItemDelete}/>
         })
     }
 }

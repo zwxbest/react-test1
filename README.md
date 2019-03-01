@@ -1,1 +1,1 @@
-bind(this)放在constructor中
+方法拆分
