@@ -1,2 +1,1 @@
-异步setState接lambda
-异步setState解决e.taget.value问题
+lamda用preState参数

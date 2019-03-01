@@ -34,9 +34,9 @@ class TodoList extends Component {
   }
 
   handleButtonClick(e){
-        this.setState(()=>({
+        this.setState((preState)=>({
             //展开运算符
-            list: [...this.state.list,this.state.inputValue],
+            list: [...preState.list,preState.inputValue],
             inputValue: ''
         }));
   }
@@ -49,10 +49,11 @@ class TodoList extends Component {
 
     handleItemDelete(index){
         //immutable react原则尽量不变，虽然这个也可以
-        const list =[...this.state.list]
-        list.splice(index,1);
-        this.setState({
-            list: list
+
+        this.setState((preState)=>{
+            const list =[...preState.list];
+            list.splice(index,1);
+            return {list}
         })
     }
 
