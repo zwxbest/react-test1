@@ -34,16 +34,17 @@ class TodoList extends Component {
   }
 
   handleButtonClick(e){
-        this.setState({
+        this.setState(()=>({
             //展开运算符
             list: [...this.state.list,this.state.inputValue],
             inputValue: ''
-        })
+        }));
   }
     handleInputChange(e){
-        this.setState({
-            inputValue: e.target.value
-        })
+        const value = e.target.value;
+        this.setState(()=>({
+            inputValue: value
+        }))
     }
 
     handleItemDelete(index){

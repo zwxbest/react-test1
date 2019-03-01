@@ -1,1 +1,2 @@
-方法拆分
+异步setState接lambda
+异步setState解决e.taget.value问题
