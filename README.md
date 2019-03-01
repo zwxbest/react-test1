@@ -1,2 +1,1 @@
-在contructor中bind
-父组件向子组件传递方法来改变父组件数据
+bind(this)放在constructor中

@@ -1,13 +1,17 @@
 import React,{Component,Fragment} from 'react';
-import './style.css'
 import TodoItem from './TodoItem'
+//最后引入样式
+import './style.css'
 class TodoList extends Component {
     constructor(props){
         super(props);
         this.state ={
             inputValue: '',
             list:[]
-        }
+        };
+        this.handleInputChange=this.handleInputChange.bind(this);
+        this.handleButtonClick=this.handleButtonClick.bind(this);
+        this.handleItemDelete=this.handleItemDelete.bind(this);
     }
   render() {
     return (
@@ -19,13 +23,13 @@ class TodoList extends Component {
                   */}
                 <label htmlFor="insertArea" >输入内容</label>
                 <input id="insertArea" className='input' value={this.state.inputValue}
-                onChange={this.handleInputChange.bind(this)}/>
-                <button onClick={this.handleButtonClick.bind(this)}>提交</button>
+                onChange={this.handleInputChange}/>
+                <button onClick={this.handleButtonClick}>提交</button>
             </div>
             <ul>
                 {
                     this.state.list.map((item,index)=>{
-                        return <TodoItem content={item} index={index} deleteItem={this.handleItemDelete.bind(this)}/>
+                        return <TodoItem content={item} index={index} deleteItem={this.handleItemDelete}/>
                     })
                 }
             </ul>
