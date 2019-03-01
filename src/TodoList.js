@@ -1,5 +1,6 @@
 import React,{Component,Fragment} from 'react';
 import TodoItem from './TodoItem'
+import PropTypes from 'prop-types';
 //最后引入样式
 import './style.css'
 class TodoList extends Component {
@@ -49,7 +50,6 @@ class TodoList extends Component {
 
     handleItemDelete(index){
         //immutable react原则尽量不变，虽然这个也可以
-
         this.setState((preState)=>{
             const list =[...preState.list];
             list.splice(index,1);
@@ -59,10 +59,14 @@ class TodoList extends Component {
 
     getTodoItem(){
        return this.state.list.map((item,index)=>{
-            return <TodoItem content={item} index={index} deleteItem={this.handleItemDelete}/>
+            return <TodoItem key={index} content={item} index={index} deleteItem={this.handleItemDelete}/>
         })
     }
 }
 
-
+TodoItem.propTypes={
+    content: PropTypes.string,
+    deleteItem: PropTypes.func,
+    index: PropTypes.string
+}
 export default TodoList;

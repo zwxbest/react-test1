@@ -1,1 +1,1 @@
-lamda用preState参数
+PropTypes类型校验
