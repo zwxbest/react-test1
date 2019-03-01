@@ -41,8 +41,10 @@ class TodoList extends Component {
             //展开运算符
             list: [...preState.list,preState.inputValue],
             inputValue: ''
-        }));
-        console.log(this.ul.querySelectorAll('div').length);
+        }),()=>{
+            console.log(this.ul.querySelectorAll('div').length);
+        });
+
   }
     handleInputChange( ){
         const value = this.input.value;

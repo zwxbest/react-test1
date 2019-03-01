@@ -1,5 +1,3 @@
 ### ref
-
-不推荐用ref
-
-this.ul.querySelectorAll('div').length
+ref帮助我们直接获取react的dom元素
+setState回调函数
