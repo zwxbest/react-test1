@@ -1,6 +1,5 @@
-### Diff算法
-1. setState是异步的，连续3次setState的间隔很小，可以同时执行
-2. 同级比较，从最顶层比对，顶层有差异，替换下面全部
-3. 虚拟dom根据key进行比对
-4. 不要用index作为key值是因为第一个删除之后基本全部重新渲染了。
-5.
+### ref
+
+不推荐用ref
+
+this.ul.querySelectorAll('div').length
