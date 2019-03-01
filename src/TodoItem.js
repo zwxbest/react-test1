@@ -9,7 +9,9 @@ class TodoItem extends Component{
 
     render(){
           const {test,content}=this.props;
-          return <div onClick={this.handleClick}>{test}-{content}</div>
+          //元素，属性，内容
+        // return <div>item</div>,这样写比较简洁
+          return React.createElement('div',{},'item')
     }
     handleClick(){
         const {deleteItem,index} = this.props;
