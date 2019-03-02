@@ -15,7 +15,8 @@ class TodoList extends Component {
         this.handleItemDelete=this.handleItemDelete.bind(this);
     }
   render() {
-    return (
+      console.log('todolist render');
+      return (
         <Fragment>
             <div>
                 {/*
@@ -36,6 +37,10 @@ class TodoList extends Component {
     );
   }
 
+  componentWillMount(){
+        console.log('componentWillMount')
+
+  }
   handleButtonClick(e){
         this.setState((preState)=>({
             //展开运算符
