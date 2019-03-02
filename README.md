@@ -1,2 +1,2 @@
 ### 生命周期函数
-1. 重新输入内容，will和did都不会再执行了，组件第一次在页面上时被执行
+1. shouldComponentUpdate 返回true才会继续执行render

@@ -37,9 +37,10 @@ class TodoList extends Component {
     );
   }
 
-  componentWillMount(){
-        console.log('componentWillMount')
-
+  //组件更新之前，也就是render之前执行
+  shouldComponentUpdate(){
+        console.log('shouldComponentUpdate');
+        return true;
   }
   handleButtonClick(e){
         this.setState((preState)=>({
