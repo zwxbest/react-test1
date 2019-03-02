@@ -39,7 +39,7 @@ class TodoList extends Component {
 
   //组件更新之前，也就是render之前执行
   shouldComponentUpdate(){
-        console.log('shouldComponentUpdate');
+        console.log('todolist shouldComponentUpdate');
         return true;
   }
   handleButtonClick(e){

@@ -7,6 +7,16 @@ class TodoItem extends Component{
         this.handleClick = this.handleClick.bind(this);
     }
 
+    //组件更新之前，也就是render之前执行
+    shouldComponentUpdate(){
+        console.log('rodoitem shouldComponentUpdate');
+        return true;
+    }
+
+    componentWillReceiveProps(){
+        console.log("componentWillReceiveProps")
+    }
+
     render(){
         const {content}=this.props;
         return <div onClick={this.handleClick}>{content}</div>
