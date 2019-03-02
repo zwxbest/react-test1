@@ -1,2 +1,5 @@
 ### 生命周期函数
-1. shouldComponentUpdate 返回true才会继续执行render
+1. componentWillReceiveProps 当1个组件从父组件接受了参数，
+2. 父组件的render被重新执行了，这个生命周期函数就执行
+3. 这个组件第一次存在与父组件中，不会执行
+4. 这个组件已经存在于父组件中，才会执行
