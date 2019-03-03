@@ -1,1 +1,3 @@
-1. 多个元素的动画
+### redux
+![redux](./redux.png)
+
