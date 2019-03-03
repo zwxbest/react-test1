@@ -41,7 +41,7 @@ class TodoList extends Component {
             .then(res=>{
                 this.setState(()=>{
                     return {
-                        list: res.data
+                        list: [...res.data]
                     }
                 })
             })
