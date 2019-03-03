@@ -1,3 +1,5 @@
 ### redux
-1. ant desgin做布局
 
+1. ![redux](./redux.png)
+
+2.创建store，创建reducer，
