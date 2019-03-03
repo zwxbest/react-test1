@@ -16,7 +16,8 @@ class App extends  Component{
         return(
             <Fragment>
                 {/*classNames对应style.css中的fade-enter的前缀*/}
-                <CSSTransition in={this.state.show} timeout={1000} classNames="fade">
+                <CSSTransition in={this.state.show} timeout={1000} classNames="fade"
+                onEntered={(el)=>{el.style.color='blue'}}>
                     <div>hello</div>
                 </CSSTransition>
             <button onClick={this.handleToggle}></button>
