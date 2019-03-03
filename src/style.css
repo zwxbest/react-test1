@@ -1,37 +1,25 @@
-.show{
-    /*forward让动画播放完了不重置*/
-    animation: show-item 2s ease-in forwards;
+.fade-enter{
+opacity: 0;
+
+
 }
-.hide{
-    animation: hide-item 2s ease-in forwards ;
+/*入场动画的第二个时刻*/
+.fade-enter-active{
+    opacity: 1;
+    transition: opacity 1s ease-in;
+}
+/*整个入场动画执行完成之后*/
+.fade-done{
+opacity: 1;
 }
 
-@keyframes show-item {
-    0% {
-        opacity: 0;
-        color: yellow;
-    }
-    50%{
-        opacity: 0.5;
-        color: black;
-    }
-    100%{
-        opacity: 1;
-        color: red;
-    }
+.fade-exit{
+ opacity: 1;
 }
-
-@keyframes hide-item {
-    0% {
-        opacity: 1;
-        color: red;
-    }
-    50%{
-        opacity: 0.5;
-        color: black;
-    }
-    100%{
-        opacity: 0;
-        color: yellow;
-    }
+.fade-exit-active{
+    opacity: 0;
+    transition: opacity 1s ease-in;
+}
+.fade-exit-done{
+    opacity: 0;
 }
