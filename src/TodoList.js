@@ -15,7 +15,6 @@ class TodoList extends Component {
         this.handleItemDelete=this.handleItemDelete.bind(this);
     }
   render() {
-      console.log('todolist render');
       return (
         <Fragment>
             <div>
@@ -25,7 +24,6 @@ class TodoList extends Component {
                   */}
                 <label htmlFor="insertArea" >输入内容</label>
                 <input id="insertArea" className='input' value={this.state.inputValue}
-                       ref={(input)=>{this.input = input}}
                 onChange={this.handleInputChange}/>
                 <button onClick={this.handleButtonClick}>提交</button>
             </div>
@@ -37,23 +35,16 @@ class TodoList extends Component {
     );
   }
 
-  //组件更新之前，也就是render之前执行
-  shouldComponentUpdate(){
-        console.log('todolist shouldComponentUpdate');
-        return true;
-  }
   handleButtonClick(e){
         this.setState((preState)=>({
             //展开运算符
             list: [...preState.list,preState.inputValue],
             inputValue: ''
-        }),()=>{
-            console.log(this.ul.querySelectorAll('div').length);
-        });
+        }));
 
   }
-    handleInputChange( ){
-        const value = this.input.value;
+    handleInputChange(e ){
+        const value = e.target.value;
         this.setState(()=>({
             inputValue: value
         }))
