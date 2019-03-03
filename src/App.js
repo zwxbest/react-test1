@@ -17,7 +17,8 @@ class App extends  Component{
             <Fragment>
                 {/*classNames对应style.css中的fade-enter的前缀*/}
                 <CSSTransition in={this.state.show} timeout={1000} classNames="fade"
-                onEntered={(el)=>{el.style.color='blue'}}>
+                onEntered={(el)=>{el.style.color='blue'}} appear={true}>
+                    {/*appear={true}一开始就有动画。加一个fade-apper和fade-appear-active*/}
                     <div>hello</div>
                 </CSSTransition>
             <button onClick={this.handleToggle}></button>

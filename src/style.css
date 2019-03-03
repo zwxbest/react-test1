@@ -1,10 +1,10 @@
-.fade-enter{
+.fade-enter,.fade-appear{
 opacity: 0;
 
 
 }
 /*入场动画的第二个时刻*/
-.fade-enter-active{
+.fade-enter-active,.fade-appear-active{
     opacity: 1;
     transition: opacity 1s ease-in;
 }
