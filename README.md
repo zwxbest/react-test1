@@ -1,1 +1,1 @@
-1.   shouldComponentUpdate(nextProps,nextState) 提升性能
+axios.get发送请求
