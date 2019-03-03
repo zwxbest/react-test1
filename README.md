@@ -1,1 +1,1 @@
-react-transiton-group实现动画
+1. show动画结束后变成蓝色

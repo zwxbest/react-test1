@@ -9,8 +9,9 @@ opacity: 0;
     transition: opacity 1s ease-in;
 }
 /*整个入场动画执行完成之后*/
-.fade-done{
+.fade-enter-done{
 opacity: 1;
+    color: blue;
 }
 
 .fade-exit{
@@ -22,4 +23,5 @@ opacity: 1;
 }
 .fade-exit-done{
     opacity: 0;
+    color: darkgoldenrod;
 }
