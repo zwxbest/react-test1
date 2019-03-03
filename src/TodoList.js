@@ -1,5 +1,6 @@
 import React,{Component,Fragment} from 'react';
 import TodoItem from './TodoItem'
+import axios from 'axios'
 
 //最后引入样式
 import './style.css'
@@ -33,6 +34,17 @@ class TodoList extends Component {
         </Fragment>
 
     );
+  }
+
+  componentDidMount(){
+        axios.get('http://47.92.161.49:3000/mock/11/api')
+            .then(res=>{
+                this.setState(()=>{
+                    return {
+                        list: res.data
+                    }
+                })
+            })
   }
 
   handleButtonClick(e){
