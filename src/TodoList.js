@@ -34,7 +34,7 @@ class TodoList extends Component{
         this.setState(store.getState());
     }
 
-    handleInputChange(e){
+     handleInputChange(e){
         console.log(e.target.value);
         const action={
             type:'change_input_value',
@@ -43,10 +43,11 @@ class TodoList extends Component{
         //传递给store
         store.dispatch(action);
     }
-    handleButtonClick(){
+     handleButtonClick(){
         const action={
             type:'add_todo_item'
-        }
+        };
+        store.dispatch(action);
     }
 }
 export default TodoList;
