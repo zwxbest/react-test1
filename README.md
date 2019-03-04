@@ -1,7 +1,5 @@
 ### redux
 
 1. ![redux](./redux.png)
-1. createStore
-1. store.dispatch
-1. store.getState
-1. store.subscribe
+1. 拆分成ui组件和容器（通用/逻辑）组件
+
