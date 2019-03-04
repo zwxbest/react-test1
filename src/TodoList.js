@@ -2,7 +2,8 @@ import React, {Component} from 'react'
 import 'antd/dist/antd.css'
 import {Input, Button, List} from 'antd'
 import store from './store/'
-import {getInputChangeAction,getAddToDoItemAction,getDeleteToDoItemAction}  from "./store/actionCreators";
+import {getInputChangeAction,getAddToDoItemAction,getDeleteToDoItemAction,initListAction}  from "./store/actionCreators";
+import  axios from 'axios'
 
 const TodoListUI =  (props)=>{
         return (
@@ -38,6 +39,14 @@ class TodoList extends Component {
         return <TodoListUI inputValue={this.state.inputValue} handleInputChange={this.handleInputChange}
         handleButtonClick={this.handleButtonClick} list={this.state.list}
                            handleItemClick={this.handleItemClick}/>
+    }
+
+    componentDidMount(){
+        axios.get('http://47.92.161.49:3000/mock/11/api').then((res)=>{
+            const data=res.data;
+            const action=initListAction(data);
+            store.dispatch(action);
+        })
     }
 
     handleStoreChange() {
