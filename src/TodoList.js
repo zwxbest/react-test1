@@ -1,7 +1,6 @@
 import React, {Component} from 'react'
 import store from './store/'
-import {getInputChangeAction,getAddToDoItemAction,getDeleteToDoItemAction,initListAction}  from "./store/actionCreators";
-import  axios from 'axios'
+import {getInputChangeAction,getAddToDoItemAction,getDeleteToDoItemAction,getTodoList}  from "./store/actionCreators";
 import TodoListUI from './TodoListUI'
 
 class TodoList extends Component {
@@ -22,11 +21,8 @@ class TodoList extends Component {
     }
 
     componentDidMount(){
-        axios.get('http://47.92.161.49:3000/mock/11/api').then((res)=>{
-            const data=res.data;
-            const action=initListAction(data);
-            store.dispatch(action);
-        })
+        const action = getTodoList();
+        store.dispatch(action);
     }
 
     handleStoreChange() {
