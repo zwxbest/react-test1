@@ -1,4 +1,4 @@
 ### redux
 
 1. ![redux](./redux.png)
-2. 增加add_todo_item的action
+2. 默认值设置为空

@@ -1,8 +1,8 @@
 
 //state整个图书馆所有书籍信息
 const defaultState={
-    inputValue: '123',
-    list:[1,2,3]
+    inputValue: '',
+    list:[]
 };
 //reducer可以接收state，但绝不能修改state
 export default (state=defaultState,action)=>{
