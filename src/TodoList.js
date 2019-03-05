@@ -1,7 +1,7 @@
 import React, {Component} from 'react'
 import store from './store/'
-import {getInputChangeAction,getAddToDoItemAction,getDeleteToDoItemAction,getTodoList}  from "./store/actionCreators";
-import TodoListUI from './TodoListUI1'
+import {getInputChangeAction,getAddToDoItemAction,getDeleteToDoItemAction,getInitList}  from "./store/actionCreators";
+import TodoListUI from './TodoListUI'
 
 class TodoList extends Component {
     constructor(props) {
@@ -21,8 +21,8 @@ class TodoList extends Component {
     }
 
     componentDidMount(){
-        const action = getTodoList();
-        store.dispatch(action);
+        const action =getInitList();
+        console.log(action);
     }
 
     handleStoreChange() {
