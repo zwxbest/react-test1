@@ -1,2 +1,2 @@
-1. saga也能接收到`const action =getInitList();`,sagas.js接收type为`GET_INIT_LIST`
-2. catch处理请求失败的情况
+1. react-redux提供Provider组件
+2. Provider连接了store,里面所有组件都可以连接store了
