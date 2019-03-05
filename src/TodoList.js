@@ -1,7 +1,7 @@
 import React, {Component} from 'react'
 import store from './store/'
 import {getInputChangeAction,getAddToDoItemAction,getDeleteToDoItemAction,getTodoList}  from "./store/actionCreators";
-import TodoListUI from './TodoListUI'
+import TodoListUI from './TodoListUI1'
 
 class TodoList extends Component {
     constructor(props) {

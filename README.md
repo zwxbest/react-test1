@@ -1,6 +1,6 @@
 ### redux
 
-1. redux-thunk可以让action写成函数，并且dispath出去
-1.  store发现是函数，帮你执行
+1. ![redux-middleware](./redux-middleware.png)
+1. redux中间件是在action和store之间，以前action只能是对象，现在可以是函数了
+1. 中间件就是对dispatch的一个封装。
 1.
-
