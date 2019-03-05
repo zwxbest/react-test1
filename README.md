@@ -1,4 +1,2 @@
-### redux
-
-1. ![middleware](./redux-middleware.png)
-1. redux-saga异步的逻辑放到saga.js中
+1. saga也能接收到`const action =getInitList();`,sagas.js接收type为`GET_INIT_LIST`
+2. 结果会打印出abc

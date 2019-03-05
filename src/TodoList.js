@@ -22,7 +22,7 @@ class TodoList extends Component {
 
     componentDidMount(){
         const action =getInitList();
-        console.log(action);
+        store.dispatch(action);
     }
 
     handleStoreChange() {
