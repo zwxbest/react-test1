@@ -8,10 +8,15 @@ function * todoSagas() {
 }
 
 function * getInitList() {
-    const res = yield axios.get('http://47.92.161.49:3000/mock/11/api');
-    const data = res.data;
-    const action=initListAction(data);
-    yield put(action);
+    try {
+        const res = yield axios.get('http://47.92.161.49:8080/login222');
+        const data = res.data;
+        const action=initListAction(data);
+        yield put(action);
+    }catch(e){
+        console.log("请求失败");
+    }
+
 }
 
 
